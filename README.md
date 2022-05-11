@@ -8,7 +8,7 @@
 > Today I Learned 
 
 ## 알고리즘
-Link: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+- [알고리즘](http://www.google.co.kr).
 
 XYZ license를 준수합니다. ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.  
 [https://github.com/yourname/github-link/LICENSE.md](https://github.com/ohahohah/)
