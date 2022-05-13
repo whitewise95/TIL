@@ -17,7 +17,8 @@
 - []().
 
 ## 자바
-- [객체지향](https://github.com/whitewise95/TIL/tree/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5).
+#### 객체지향
+- [클래스,인스턴스,메소드](https://github.com/whitewise95/TIL/tree/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5).
 
 ## 스프링
 - []().
