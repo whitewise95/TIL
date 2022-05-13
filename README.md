@@ -39,6 +39,7 @@
 ## 메모장
 - 상속과 구현에 대해 더 알아보기
 - supur() 에대해서 알아보기
+- 서버 사이드렌더링 vs 클라이언트 사이드 렌더링 알아보기
 
 XYZ license를 준수합니다. ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.  
 [https://github.com/yourname/github-link/LICENSE.md](https://github.com/ohahohah/)
