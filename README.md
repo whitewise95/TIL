@@ -30,7 +30,7 @@
 - []()
 
 ## 항해99
-- [1주차 웹 미니프로젝트 느낌점](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/1%EC%A3%BC%EC%B0%A8%20%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8).
+- [1주차 웹 미니프로젝트를 마치고 느낌점](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/1%EC%A3%BC%EC%B0%A8%20%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8).
 
 ## 팀 프로젝트들
 - [가사도우미](https://github.com/whitewise95/lyrics_guide).
