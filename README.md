@@ -21,6 +21,9 @@
 ## 파이썬
 - [PyMongo](https://github.com/whitewise95/TIL/blob/main/Python/PyMongo(MongoDB).md).
 - [PyJWT](https://github.com/whitewise95/TIL/blob/main/Python/PyJWT(JWT).md).
+- [Flask](https://github.com/whitewise95/TIL/blob/main/Python/Flask.md)
+- [Requests](https://github.com/whitewise95/TIL/blob/main/Python/Requests.md)
+- [f-string formatting](https://github.com/whitewise95/TIL/blob/main/Python/f-string%20formatting.md)
 
 ## 자바
 - 객체지향
