@@ -19,7 +19,8 @@
 > [jinja2](https://github.com/whitewise95/TIL/blob/main/Template%20Engine/jinja2/jinja2%EA%B8%B0%EC%B4%88.md).
 
 ## 파이썬
-- []().
+- [PyMongo](https://github.com/whitewise95/TIL/blob/main/Python/PyMongo(MongoDB).md).
+- [PyJWT](https://github.com/whitewise95/TIL/blob/main/Python/PyJWT(JWT).md).
 
 ## 자바
 - 객체지향
