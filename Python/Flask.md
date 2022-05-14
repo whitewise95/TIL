@@ -38,7 +38,7 @@ def home():
 - <> 안에 매개변수처럼 받고싶은 변수명을 적으면  localhost:5000/user/sam/1515 라는 url로 넘겨 sma과 1515 받을수 있다.
 - URL은 문자열이기 때문에 <converter : variable_name> 구문을 사용해서 URL에서 받은 변수 타입을 변형할 수 있다. converter로 사용할 수 있는 옵션은 아래와 같다 
 - 반환되는 값으로 f-string 포맷을 활용해서 문자열에 변수를 넣고 Html에 적용 시킬 수 있다.
-[f-string 포맷이란?]()
+[f-string 포맷이란?](https://github.com/whitewise95/TIL/blob/main/Python/f-string%20formatting.md)
 ```
 @app.route('/user/<user_name>/<int:user_id>')
 def user(user_name, user_id):
