@@ -3,6 +3,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ohahohah/readme-template/graphs/commit-activity) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+- 최대한 이해한 것까지만 적도록 하며 아니여도 중요한 내용이라 앞으로 공부하려고 적어놓는 경우도 있습니다.
+- 체계같은게 없어서 각 TIL 글 스타일들이 다 다를 수가 있습니다.
+- 완벽한 글들이 아닌 채워가는 글이기에 많이 부족합니다.
+
 
 
 > Today I Learned 
