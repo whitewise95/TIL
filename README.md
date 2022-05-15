@@ -44,6 +44,8 @@
 
 ## server
 - [JWT토큰](https://github.com/whitewise95/TIL/blob/main/server/JWT%ED%86%A0%ED%81%B0.md)
+- [API](https://github.com/whitewise95/TIL/blob/main/server/API.md)
+- [REST API](https://github.com/whitewise95/TIL/blob/main/server/REST%20API.md)
 
 ## 항해99
 - [1주차 웹 미니프로젝트를 마치고 느낌점](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/1%EC%A3%BC%EC%B0%A8%20%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8).
