@@ -12,7 +12,7 @@
 > Today I Learned 
 
 ## 알고리즘
-- []().
+- [알고리즘 문제풀이](https://github.com/whitewise95/TIL/tree/main/algorithm).
 
 ## 템플릿엔진
 - 파이썬
