@@ -53,6 +53,9 @@
 ## 팀 프로젝트들
 - [가사도우미](https://github.com/whitewise95/lyrics_guide).
 
+## book
+- [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
+
 ## 메모장
 - 상속과 구현에 대해 더 알아보기
 - supur() 에대해서 알아보기
