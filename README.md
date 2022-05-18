@@ -35,6 +35,7 @@
 - 그 외 
 > [날짜와 시간 다루기(date,LocalDate)](https://github.com/whitewise95/TIL/blob/main/Java/%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20%EB%8B%A4%EB%A3%A8%EA%B8%B0.md)  
 > [Array 메소드 ](https://github.com/whitewise95/TIL/blob/main/Java/Arrays.md)  
+> [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)
 ## 스프링
 - []()
 
