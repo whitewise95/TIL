@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>가사도우미</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Gamja Flower', cursive;
+        }
+
+        .mypic {
+            width: 100%;
+            height: 300px;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ytimg.com/vi/6sf_28D14qA/maxresdefault.jpg');
+            background-position: center;
+            background-size: cover;
+
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mycards {
+            width: 95%;
+            max-width: 700px;
+            margin: 0px 0px 0px 10%;
+        }
+
+        .mycards > .card {
+            margin-bottom: 2%;
+        }
+
+        .footer {
+            padding-bottom: 1%;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            check_genre();
+        });
+
+        function select_lyrics() {
+            $.ajax({
+                type: 'get',
+                url: '/main-page/all',
+                data: {data: $("#testText").val()},
+                success: function (response) {
+                    location.reload();
+                }
+            });
+        }
+
+        function check_genre() {
+            let genre = '#' + '{{ genre }}';
+            if (genre == "랩,힙합") {
+                $("#랩").attr("class", "list-group-item list-group-item-action active")
+            } else if (genre == "인디,포크") {
+                $("#인디").attr("class", "list-group-item list-group-item-action active")
+            } else {
+                $(genre).attr("class", "list-group-item list-group-item-action active")
+            }
+
+        }
+
+        function logout() {
+            $.removeCookie('mytoken', {path: '/'});
+            window.location.href = '/'
+        }
+
+    </script>
+</head>
+<body>
+<div class="mypic">
+    <h1>가사 도우미</h1>
+</div>
+<div style="display: flex; padding-left: 55%; margin-top: 2%">
+    <h6 style="margin-right: 1%;margin-top: 1%"><i class="bi bi-award"></i>{{ id }} 님 환영합니다.</h6>
+    <button class="btn btn-outline-secondary" onclick="window.location.href='/lyrics/new'">가사 쓰기</button>
+    <button class="btn btn-outline-secondary" style="margin-left: 1%" onclick="logout()">로그아웃</button>
+</div>
+<DIV style="margin-left: 20%">
+
+    <div style="display: flex; padding-left: 5%; padding-top: 5%">
+        <div class="list-group" style="width: 95%; max-width: 150px">
+            <a href="/main-page/all" class="list-group-item list-group-item-action" id="all">
+                전체
+            </a>
+            <a href="/main-page/랩,힙합" class="list-group-item list-group-item-action" id="랩">랩,힙합</a>
+            <a href="/main-page/발라드" class="list-group-item list-group-item-action" id="발라드">발라드</a>
+            <a href="/main-page/OST" class="list-group-item list-group-item-action" id="OST">OST</a>
+            <a href="/main-page/K-POP" class="list-group-item list-group-item-action" id="K-POP">K-POP</a>
+            <a href="/main-page/POP" class="list-group-item list-group-item-action" id="POP">POP</a>
+            <a href="/main-page/뮤지컬" class="list-group-item list-group-item-action" id="뮤지컬">뮤지컬</a>
+            <a href="/main-page/ROCK" class="list-group-item list-group-item-action" id="ROCK">ROCK</a>
+            <a href="/main-page/댄스" class="list-group-item list-group-item-action" id="댄스">댄스</a>
+            <a href="/main-page/인디,포크" class="list-group-item list-group-item-action" id="인디">인디,포크</a>
+        </div>
+        <div class="mycards" id="comment-list">
+            {% if lyrics_arr %}
+                {% for item in lyrics_arr %}
+                    <div class="card  shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body" onclick="window.location.href='/detail/{{ item.num }}'">
+                            <blockquote class="blockquote mb-0">
+                                <div style="display: flex; margin-bottom: 50px">
+                                    <i class="bi bi-filter-square"></i> <p> {{ item.subject }}</p>
+                                </div>
+                                <div style="display: flex;">
+                                    <i class="bi bi-music-note-beamed"></i>
+                                    <i class="bi bi-music-note-list"></i><span>...</span><h5 style="">{{ item.lyrics }}</h5>
+                            </blockquote>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="card  shadow p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <div style="display: flex; margin-bottom: 50px">
+                                {% if genre == "all" %}
+                                    <p>첫 글이 없습니다. 첫 가사를 적어주세요~</p>
+                                {% else %}
+                                    <p>아직 {{ genre }}에 글이 없습니다. </p>
+                                {% endif %}
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</DIV>
+</body>
+</html>
