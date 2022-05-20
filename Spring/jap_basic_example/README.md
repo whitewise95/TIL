@@ -1,5 +1,5 @@
 # jap_basic_example
--  __파일 구조__ 
+-  __프로젝트 간단한 __ 
 ```
 프로젝트\SRC\MAIN
 ├─java
