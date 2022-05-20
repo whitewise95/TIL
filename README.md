@@ -37,12 +37,13 @@
 > [Array 메소드 ](https://github.com/whitewise95/TIL/blob/main/Java/Arrays.md)  
 > [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)
 ## 스프링
-- []()
+- [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Spring/DTO,%20DAO,%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
 
-## server
+## 그 외
 - [JWT토큰](https://github.com/whitewise95/TIL/blob/main/server/JWT%ED%86%A0%ED%81%B0.md)
 - [API](https://github.com/whitewise95/TIL/blob/main/server/API.md)
 - [REST API](https://github.com/whitewise95/TIL/blob/main/server/REST%20API.md)
+- [나의 프로젝트 구성을 한 눈에](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8F%B4%EB%8D%94%20%EA%B5%AC%EC%A1%B0.md)
 
 ## 항해99
 - [1주차 웹 미니프로젝트(Python)](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/lyrics_guide)
