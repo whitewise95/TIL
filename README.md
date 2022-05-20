@@ -48,8 +48,8 @@
 - [1주차 웹 미니프로젝트(Python)](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/lyrics_guide)
 
 ## 소스
-[스프링 부트와 AWS로 구현하는 웹서비스 따라하기 example](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice)
-[전자정부프레임워크 CRUD 게시판 example](https://github.com/whitewise95/egovframe_example)
+-[스프링 부트와 AWS로 구현하는 웹서비스 따라하기 example](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice)  
+-[전자정부프레임워크 CRUD 게시판 example](https://github.com/whitewise95/egovframe_example)
 
 ## book
 - [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
