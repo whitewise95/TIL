@@ -45,10 +45,9 @@
 - [REST API](https://github.com/whitewise95/TIL/blob/main/server/REST%20API.md)
 
 ## 항해99
-- [1주차 웹 미니프로젝트를 마치고 느낌점](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/1%EC%A3%BC%EC%B0%A8%20%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8).
+- [1주차 웹 미니프로젝트(Python)](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/lyrics_guide)
 
-## 팀 프로젝트들
-- [가사도우미](https://github.com/whitewise95/lyrics_guide).
+## 프로젝트
 
 ## book
 - [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
