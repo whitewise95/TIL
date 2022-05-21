@@ -8,7 +8,7 @@
 > Today I Learned 
 
 ## 알고리즘
-- [알고리즘 문제풀이](https://github.com/whitewise95/TIL/tree/main/algorithm).
+- [프로그래머스](https://github.com/whitewise95/TIL/tree/main/algorithm).
 
 ## 템플릿엔진
 - 파이썬
@@ -35,7 +35,9 @@
 - 그 외 
 > [날짜와 시간 다루기(date,LocalDate)](https://github.com/whitewise95/TIL/blob/main/Java/%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20%EB%8B%A4%EB%A3%A8%EA%B8%B0.md)  
 > [Array 메소드 ](https://github.com/whitewise95/TIL/blob/main/Java/Arrays.md)  
-> [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)
+> [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)  
+> [String, StringBuffer, StringBuilder 차이 및 장단점](https://github.com/whitewise95/TIL/blob/main/Java/String%2C%20StringBuffer%2C%20StringBuilder%20%EC%B0%A8%EC%9D%B4%20%EB%B0%8F%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)
+> 
 ## 스프링
 - [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Spring/DTO,%20DAO,%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
 
