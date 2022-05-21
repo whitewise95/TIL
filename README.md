@@ -53,6 +53,8 @@
 ## 소스
 - [스프링 부트와 AWS로 구현하는 웹서비스 따라하기 example](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice)  
 - [전자정부프레임워크 CRUD 게시판 example](https://github.com/whitewise95/egovframe_example)
+- [JPA를 이용한 CRUD API 소스](https://github.com/whitewise95/TIL/tree/main/example/JPA_CRUD_%20examples/Only%20API%20exists)
+- [Excel Upload and Download](https://github.com/whitewise95/TIL/tree/main/example/Excel%20in%20java)
 
 ## book
 - [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
