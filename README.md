@@ -40,6 +40,7 @@
 > 
 ## 스프링
 - [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Spring/DTO,%20DAO,%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
+- [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Spring/%40Scheduled.md)
 
 ## 그 외
 - [JWT토큰](https://github.com/whitewise95/TIL/blob/main/server/JWT%ED%86%A0%ED%81%B0.md)
