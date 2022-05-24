@@ -1,11 +1,12 @@
 ## 클라이언트
-- input type = "file" 로 파일을 받는다 { accept="image/png" }
+
+# html
 ```
 <input type="file" style="display: none" id="image" accept="image/png"/>
 ```
-- ext 는 파일의 확장자이다.
--  ext != "png" 로 비교 가능
-- 선택한 파일은 files[0] 데이터를 가공시킨다.
+- input type = "file" 로 파일을 받는다 { accept="image/png" }  
+
+# javaScript
 ```
  $("#image").change(function () {      
     var ext = $(this).val().split('.').pop().toLowerCase();  
@@ -14,7 +15,12 @@
     fileUpload(fileImg);
 })
 ```
--  cache: false, contentType: false, enctype: 'multipart/form-data', processData: false, 설정을 꼭 해주고 파일을 넘겨준다.
+- ext 는 파일의 확장자이다.
+-  ext != "png" 로 비교 가능
+- 선택한 파일은 files[0] 데이터를 가공시킨다.
+
+
+# ajax 
 ```
     function fileUpload(file) {
         var form_data = new FormData();
@@ -38,11 +44,12 @@
         });
     }
 ```
+-  cache: false, contentType: false, enctype: 'multipart/form-data', processData: false, 설정을 꼭 해주고 파일을 넘겨준다.
+
 
 
 ## 서버
-- controller
-- MultipartFile로 file을 바인딩한다.
+# controller
 ```
     @ResponseBody
     @RequestMapping("/common/fileUpload")
@@ -51,7 +58,9 @@
         return commonService.fileUpload(file, subPath);
     }
 ```
-- service
+- MultipartFile로 file을 바인딩한다.
+
+# service
 > 1. !file.exists()  폴더가 없으면  file.mkdirs(); 생성된다.  
 > 2. new File("").getAbsolutePath() 프로젝트 제일 상단 폴더 까지 표시된다.  
 > 3. rtnVal변수는 클라이언트 img태그에 src에 들어가게된다.
