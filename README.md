@@ -21,6 +21,8 @@
 
 ## 자바
 - 객체지향
+> [객체지향이란?](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
+> [JVM](https://github.com/whitewise95/TIL/blob/main/Java/JVM.md)
 > [클래스,인스턴스,메소드](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%20%EB%A9%94%EC%86%8C%EB%93%9C.md)  
 > [생성자(constructor)](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%83%9D%EC%84%B1%EC%9E%90(constructor).md)  
 > [상속](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%83%81%EC%86%8D.md)  
@@ -37,8 +39,8 @@
 > [String, StringBuffer, StringBuilder 차이 및 장단점](https://github.com/whitewise95/TIL/blob/main/Java/String%2C%20StringBuffer%2C%20StringBuilder%20%EC%B0%A8%EC%9D%B4%20%EB%B0%8F%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)
 > [JSON 파싱](https://github.com/whitewise95/TIL/blob/main/Java/JSON%20%ED%8C%8C%EC%8B%B1.md)
 ## 스프링
-- [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Spring/DTO,%20DAO,%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
-- [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Spring/%40Scheduled.md)
+- [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Java/Spring/DTO%2C%20DAO%2C%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
+- [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%40Scheduled.md)
 
 ## 그 외
 - [JWT토큰](https://github.com/whitewise95/TIL/blob/main/server/JWT%ED%86%A0%ED%81%B0.md)
@@ -52,8 +54,9 @@
 ## 소스
 - [스프링 부트와 AWS로 구현하는 웹서비스 따라하기 example](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice)  
 - [전자정부프레임워크 CRUD 게시판 example](https://github.com/whitewise95/egovframe_example)
-- [JPA를 이용한 CRUD API 소스](https://github.com/whitewise95/TIL/tree/main/example/JPA_CRUD_%20examples/Only%20API%20exists)
-- [Excel Upload and Download](https://github.com/whitewise95/TIL/tree/main/example/Excel%20in%20java)
+- [JPA를 이용한 CRUD API 소스](https://github.com/whitewise95/TIL/tree/main/Java/example/JPA_CRUD_%20examples/Only%20API%20exists)
+- [Excel Upload and Download](https://github.com/whitewise95/TIL/tree/main/Java/example/Excel%20in%20java)
+- [이미지 업로드(서버의 폴더(o) SFTP(x))](https://github.com/whitewise95/TIL/blob/main/Java/example/%5Bjava%5D%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%85%EB%A1%9C%EB%93%9C%20(imageUpload).md)
 
 ## book
 - [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
