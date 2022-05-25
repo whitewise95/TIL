@@ -7,7 +7,7 @@
 - [SweetAlert2](https://github.com/whitewise95/TIL/blob/main/HTML/SweetAlert2.md)
 
 ## CSS
--[MyBlog](https://github.com/whitewise95/TIL/tree/main/CSS/MyBlog)
+- [MyBlog](https://github.com/whitewise95/TIL/tree/main/CSS/MyBlog)
 
 ## 알고리즘
 - [프로그래머스](https://github.com/whitewise95/TIL/tree/main/algorithm).
