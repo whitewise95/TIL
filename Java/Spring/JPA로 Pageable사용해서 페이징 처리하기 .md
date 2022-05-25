@@ -30,7 +30,7 @@ public Page<Blog> blogFindAll(Pageable pageable) {
 
 # Response
 - content - 불러온 DB 데이터 
-- 그외 - 전부 Pageable 데
+- 그외 - 전부 Pageable 데이터  
 ![화면 캡처 2022-05-25 105042](https://user-images.githubusercontent.com/81284265/170162110-20374833-8267-4279-bdf2-eff706f3a68e.png)
 
 
