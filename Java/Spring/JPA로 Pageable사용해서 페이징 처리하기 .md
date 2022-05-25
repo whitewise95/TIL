@@ -24,9 +24,15 @@ public Page<Blog> blogFindAll(Pageable pageable) {
 ```
 
 
-# 넘어온 데이터
+# Request
 
 ![화면 캡처 2022-05-25 104646](https://user-images.githubusercontent.com/81284265/170161438-c2643c2f-5b4a-425c-b9bc-c0c006848195.png)
+
+# Response
+- content - 불러온 DB 데이터 
+- 그외 - 전부 Pageable 데
+![화면 캡처 2022-05-25 105042](https://user-images.githubusercontent.com/81284265/170162110-20374833-8267-4279-bdf2-eff706f3a68e.png)
+
 
 # 같이 활용할 html js
 [페이징](https://github.com/whitewise95/TIL/tree/main/HTML/paging)
