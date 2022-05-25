@@ -2,6 +2,13 @@
 > Today I Learned 
 - 최대한 이해한 것까지만 적도록 하며 아니여도 중요한 내용이라 앞으로 공부하려고 적어놓는 경우도 있습니다.
 
+## HTML
+- [twbspagination예제 및 옵션](https://github.com/whitewise95/TIL/blob/main/HTML/paging/twbspagination%EC%98%88%EC%A0%9C%20%EB%B0%8F%20%EC%98%B5%EC%85%98.md)
+- [SweetAlert2](https://github.com/whitewise95/TIL/blob/main/HTML/SweetAlert2.md)
+
+## CSS
+-[MyBlog](https://github.com/whitewise95/TIL/tree/main/CSS/MyBlog)
+
 ## 알고리즘
 - [프로그래머스](https://github.com/whitewise95/TIL/tree/main/algorithm).
 
@@ -38,6 +45,7 @@
 ## 스프링
 - [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Java/Spring/DTO%2C%20DAO%2C%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
 - [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%40Scheduled.md)
+- [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)
 
 ## 그 외
 - [JWT토큰](https://github.com/whitewise95/TIL/blob/main/server/JWT%ED%86%A0%ED%81%B0.md)
