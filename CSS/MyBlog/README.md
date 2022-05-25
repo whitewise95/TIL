@@ -3,5 +3,5 @@
 # 페이징
 - CSS
 [페이징](https://github.com/whitewise95/TIL/tree/main/HTML/paging)
-- JPA
+# JPA
 - []()
