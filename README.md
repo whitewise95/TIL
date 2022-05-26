@@ -25,8 +25,8 @@
 
 ## 자바
 - 객체지향
-> [객체지향이란?](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
-> [JVM](https://github.com/whitewise95/TIL/blob/main/Java/JVM.md)
+> [객체지향이란?](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)  
+> [JVM](https://github.com/whitewise95/TIL/blob/main/Java/JVM.md)  
 > [클래스,인스턴스,메소드](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%20%EB%A9%94%EC%86%8C%EB%93%9C.md)  
 > [생성자(constructor)](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%83%9D%EC%84%B1%EC%9E%90(constructor).md)  
 > [상속](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%83%81%EC%86%8D.md)  
