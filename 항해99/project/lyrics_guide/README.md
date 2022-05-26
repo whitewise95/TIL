@@ -55,7 +55,7 @@
 - [requests 2.27.1]().
   
 > 서버환경
--  AWS EC2 (Ubuntu 18.04 LTS)
+-  AWS EC2 (Ubuntu 22.04 LTS)
   
 > 소스형상관리 및 툴 그리고 DB
 - [소스트리](https://www.sourcetreeapp.com/).
