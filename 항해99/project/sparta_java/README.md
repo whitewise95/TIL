@@ -1,6 +1,6 @@
 # 힝해99 2주차 Spring과제 [소스 다운로드](https://drive.google.com/file/d/1Oh8VRJKIXmwnrmaYlixl0WRXweUd35-T/view?usp=sharing)
 -객체지향에 대한 과제
-- [객체지향]()
+- [객체지향](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 
 ## class model
 
