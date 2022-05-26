@@ -1,0 +1,14 @@
+components:
+  slide: "\\"
+  base-url: "\\src\\main\\resources\\static"
+  src-url: "images"
+
+
+
+---
+spring:
+  profiles: prod
+components:
+  slide: "/"
+  base-url: "/home/ubuntu"
+  src-url: "upload"
