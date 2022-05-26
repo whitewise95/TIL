@@ -34,7 +34,7 @@
 > [접근제어자](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9E%90.md)  
 > [인터페이스 vs 추상클래스](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)  
 - 컬렉션
-> [리스트(list),셋(set),맵(map)](https://github.com/whitewise95/TIL/blob/main/Java/%EC%BB%AC%EB%A0%89%EC%85%98/%EB%A6%AC%EC%8A%A4%ED%8A%B8%2C%EC%85%8B%2C%EB%A7%B5.md)  
+> [리스트(list),셋(set),맵(map)](https://github.com/whitewise95/TIL/blob/main/Java/%EC%BB%AC%EB%A0%89%EC%85%98/%EB%A6%AC%EC%8A%A4%ED%8A%B8(list)%2C%EC%85%8B(set)%2C%EB%A7%B5(map).md)  
 > [스택(stack), 큐(queue), ArrayDeque](https://github.com/whitewise95/TIL/blob/main/Java/%EC%BB%AC%EB%A0%89%EC%85%98/%EC%8A%A4%ED%83%9D(stack)%2C%20%ED%81%90(queue)%2C%20ArrayDeque.md)
 - 그 외 
 > [날짜와 시간 다루기(date,LocalDate)](https://github.com/whitewise95/TIL/blob/main/Java/%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20%EB%8B%A4%EB%A3%A8%EA%B8%B0.md)  
