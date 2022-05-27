@@ -1,3 +1,6 @@
+# 글을 쓰게 된 이유
+- IOC와 DI는 처음 스프링을 배웠을 때 이해가 안되었지만 문제없이 사용하고 있어서 대충 알고 넘어갔다. 하지만 지금 다시 배우게 내용를 다우게 되었고 그 동안 스프링을 사용하는데 IOC 와 DI를 모르면 안되지 라는 말을 많이 들어가지고 이번에는 꼭 이해하고 넘어가고싶어서 내가 이해한 내용을 정리해 보았다.
+
 # IoC(Inversion of Control, 제어의 역전)
 - 스프링의 컨테이너가 필요에 따라 개발자 대신 생성하고 Bean들을 관리(제어)해주는 행위
 
@@ -27,10 +30,10 @@ service의 더하기 메소드에 숫자1 과 숫자2는 service에서 생성된
 
 
 # IOC 예제
-> @RequiredArgsConstructor와 @Autowired 쓰면 자동으로 생성자를 쓰지 않아도 되지만 이해를 돕기위해 쓰지 않는 방향으로 구성했습니다.  
+>  이해를 돕기위해 생성자주입으로 진행했습니다.  
+
 ![화면 캡처 2022-05-27 210820](https://user-images.githubusercontent.com/81284265/170696397-6558b935-eb04-4a93-8f42-9e6e1a3ea5a1.png)
 
-- @RequiredArgsConstructor 를 쓰지 않으면 위 코드처럼 생성자를 만들어 주어야합니다.
 
 📍 여기서 질문! 
 - 생성자 매개변수로 있는 BlogService 와 BlogRepository를 보면 더하기 예제에서 본 service의 더하기 메소드와 같이 어디선가 생성해준 객체를 받은것입니다. 그렇다면 BlogService 와 BlogRepository를
@@ -61,7 +64,7 @@ BlogController controller = new BlogController(blogService, blogRepository);
 @Component
 @Repositoty
 @Service
-@COntroller
+@Controller
 @Configuration
 ```
 # 빈으로 등록해서 생성됬었다면 어떻게 꺼내 쓰나요?
