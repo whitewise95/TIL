@@ -57,6 +57,11 @@
 - [나의 프로젝트 구성을 한 눈에](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8F%B4%EB%8D%94%20%EA%B5%AC%EC%A1%B0.md)
 - [클라이언트에서 서버까지 그림으로](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EA%B9%8C%EC%A7%80%20%EC%A7%84%ED%96%89.md)
 
+## AWS
+- [EC2구매부터 배포까지](https://github.com/whitewise95/TIL/blob/main/AWS/EC2/EC2%20%EA%B5%AC%EB%A7%A4%20%EB%B6%80%ED%84%B0%20%EB%B0%B0%ED%8F%AC%EA%B9%8C%EC%A7%80.md)  
+- [RDS구매 부터 포트 열어주기](https://github.com/whitewise95/TIL/blob/main/AWS/RDS/RDS%EA%B5%AC%EB%A7%A4%20%EB%B6%80%ED%84%B0%20%ED%8F%AC%ED%8A%B8%20%EC%97%B4%EC%96%B4%EC%A3%BC%EA%B8%B0.md)  
+- [RDS 인텔리제이와 연결](https://github.com/whitewise95/TIL/blob/main/AWS/RDS/RDS%20%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%9C%EC%9D%B4%EC%99%80%20%EC%97%B0%EA%B2%B0.md)
+
 ## 항해99
 - [1주차 웹 미니프로젝트(Python)](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/lyrics_guide)
 - [2주차 객체지향 과제](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/sparta_java)
