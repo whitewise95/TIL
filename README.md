@@ -2,28 +2,19 @@
 > Today I Learned 
 - 최대한 이해한 것까지만 적도록 하며 아니여도 중요한 내용이라 앞으로 공부하려고 적어놓는 경우도 있습니다.
 
-## HTML
-- [twbspagination예제 및 옵션](https://github.com/whitewise95/TIL/blob/main/HTML/paging/twbspagination%EC%98%88%EC%A0%9C%20%EB%B0%8F%20%EC%98%B5%EC%85%98.md)
-- [SweetAlert2](https://github.com/whitewise95/TIL/blob/main/HTML/SweetAlert2.md)
+## AWS
+- [EC2구매부터 배포까지](https://github.com/whitewise95/TIL/blob/main/AWS/EC2/EC2%20%EA%B5%AC%EB%A7%A4%20%EB%B6%80%ED%84%B0%20%EB%B0%B0%ED%8F%AC%EA%B9%8C%EC%A7%80.md)  
+- [RDS구매 부터 포트 열어주기](https://github.com/whitewise95/TIL/blob/main/AWS/RDS/RDS%EA%B5%AC%EB%A7%A4%20%EB%B6%80%ED%84%B0%20%ED%8F%AC%ED%8A%B8%20%EC%97%B4%EC%96%B4%EC%A3%BC%EA%B8%B0.md)  
+- [RDS 인텔리제이와 연결](https://github.com/whitewise95/TIL/blob/main/AWS/RDS/RDS%20%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%9C%EC%9D%B4%EC%99%80%20%EC%97%B0%EA%B2%B0.md)
 
 ## CSS
 - [MyBlog](https://github.com/whitewise95/TIL/tree/main/CSS/MyBlog)
 
-## 알고리즘
-- [프로그래머스](https://github.com/whitewise95/TIL/tree/main/algorithm).
+## HTML
+- [twbspagination예제 및 옵션](https://github.com/whitewise95/TIL/blob/main/HTML/paging/twbspagination%EC%98%88%EC%A0%9C%20%EB%B0%8F%20%EC%98%B5%EC%85%98.md)
+- [SweetAlert2](https://github.com/whitewise95/TIL/blob/main/HTML/SweetAlert2.md)
 
-## 템플릿엔진
-- 파이썬
-> [jinja2](https://github.com/whitewise95/TIL/blob/main/Template%20Engine/jinja2/jinja2%EA%B8%B0%EC%B4%88.md).
-
-## 파이썬
-- [PyMongo](https://github.com/whitewise95/TIL/blob/main/Python/PyMongo(MongoDB).md).
-- [PyJWT](https://github.com/whitewise95/TIL/blob/main/Python/PyJWT(JWT).md).
-- [Flask](https://github.com/whitewise95/TIL/blob/main/Python/Flask.md)
-- [Requests](https://github.com/whitewise95/TIL/blob/main/Python/Requests.md)
-- [f-string formatting](https://github.com/whitewise95/TIL/blob/main/Python/f-string%20formatting.md)
-
-## 자바
+## JAVA
 - 객체지향
 > [객체지향이란?](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)  
 > [JVM](https://github.com/whitewise95/TIL/blob/main/Java/JVM.md)  
@@ -42,7 +33,7 @@
 > [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)  
 > [String, StringBuffer, StringBuilder 차이 및 장단점](https://github.com/whitewise95/TIL/blob/main/Java/String%2C%20StringBuffer%2C%20StringBuilder%20%EC%B0%A8%EC%9D%B4%20%EB%B0%8F%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)
 > [JSON 파싱](https://github.com/whitewise95/TIL/blob/main/Java/JSON%20%ED%8C%8C%EC%8B%B1.md)
-## 스프링
+## SPRING
 - [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Java/Spring/DTO%2C%20DAO%2C%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
 - [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%40Scheduled.md)
 - [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)
@@ -55,12 +46,24 @@
 - [API](https://github.com/whitewise95/TIL/blob/main/server/API.md)
 - [REST API](https://github.com/whitewise95/TIL/blob/main/server/REST%20API.md)
 - [나의 프로젝트 구성을 한 눈에](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8F%B4%EB%8D%94%20%EA%B5%AC%EC%A1%B0.md)
-- [클라이언트에서 서버까지 그림으로](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EA%B9%8C%EC%A7%80%20%EC%A7%84%ED%96%89.md)
+- [클라이언트에서 서버까지 그림으로](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EA%B9%8C%EC%A7%80%20%EC%A7%84%ED%96%89.md)  
 
-## AWS
-- [EC2구매부터 배포까지](https://github.com/whitewise95/TIL/blob/main/AWS/EC2/EC2%20%EA%B5%AC%EB%A7%A4%20%EB%B6%80%ED%84%B0%20%EB%B0%B0%ED%8F%AC%EA%B9%8C%EC%A7%80.md)  
-- [RDS구매 부터 포트 열어주기](https://github.com/whitewise95/TIL/blob/main/AWS/RDS/RDS%EA%B5%AC%EB%A7%A4%20%EB%B6%80%ED%84%B0%20%ED%8F%AC%ED%8A%B8%20%EC%97%B4%EC%96%B4%EC%A3%BC%EA%B8%B0.md)  
-- [RDS 인텔리제이와 연결](https://github.com/whitewise95/TIL/blob/main/AWS/RDS/RDS%20%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%9C%EC%9D%B4%EC%99%80%20%EC%97%B0%EA%B2%B0.md)
+## book
+- [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
+
+## 알고리즘
+- [프로그래머스](https://github.com/whitewise95/TIL/tree/main/algorithm).
+
+## 템플릿엔진
+- 파이썬
+> [jinja2](https://github.com/whitewise95/TIL/blob/main/Template%20Engine/jinja2/jinja2%EA%B8%B0%EC%B4%88.md).
+
+## 파이썬
+- [PyMongo](https://github.com/whitewise95/TIL/blob/main/Python/PyMongo(MongoDB).md).
+- [PyJWT](https://github.com/whitewise95/TIL/blob/main/Python/PyJWT(JWT).md).
+- [Flask](https://github.com/whitewise95/TIL/blob/main/Python/Flask.md)
+- [Requests](https://github.com/whitewise95/TIL/blob/main/Python/Requests.md)
+- [f-string formatting](https://github.com/whitewise95/TIL/blob/main/Python/f-string%20formatting.md)
 
 ## 항해99
 - [1주차 웹 미니프로젝트(Python)](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/lyrics_guide)
@@ -73,9 +76,6 @@
 - [JPA를 이용한 CRUD API 소스](https://github.com/whitewise95/TIL/tree/main/Java/example/JPA_CRUD_%20examples/Only%20API%20exists)
 - [Excel Upload and Download](https://github.com/whitewise95/TIL/tree/main/Java/example/Excel%20in%20java)
 - [이미지 업로드(서버의 폴더(o) SFTP(x))](https://github.com/whitewise95/TIL/blob/main/Java/example/%5Bjava%5D%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%85%EB%A1%9C%EB%93%9C%20(imageUpload).md)
-
-## book
-- [1일 1로그 100일 완성 IT지식](https://github.com/whitewise95/TIL/tree/main/book/1%EC%9D%BC%201%EB%A1%9C%EA%B7%B8%20100%EC%9D%BC%20%EC%99%84%EC%84%B1%20IT%EC%A7%80%EC%8B%9D)
 
 ## 메모장
 - 상속과 구현에 대해 더 알아보기
