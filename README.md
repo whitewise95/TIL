@@ -43,9 +43,9 @@
 ## JPA
 - [JPA란?](https://github.com/whitewise95/TIL/blob/main/Java/JPA/JPA%EB%9E%80%3F.md)
 ## 그 외
-- [JWT토큰](https://github.com/whitewise95/TIL/blob/main/server/JWT%ED%86%A0%ED%81%B0.md)
-- [API](https://github.com/whitewise95/TIL/blob/main/server/API.md)
-- [REST API](https://github.com/whitewise95/TIL/blob/main/server/REST%20API.md)
+- [JWT토큰](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT%ED%86%A0%ED%81%B0.md)
+- [API](https://github.com/whitewise95/TIL/blob/main/the_rest/API.md)
+- [REST API](https://github.com/whitewise95/TIL/blob/main/the_rest/REST%20API.md)
 - [나의 프로젝트 구성을 한 눈에](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8F%B4%EB%8D%94%20%EA%B5%AC%EC%A1%B0.md)
 - [클라이언트에서 서버까지 그림으로](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EA%B9%8C%EC%A7%80%20%EC%A7%84%ED%96%89.md)  
 
