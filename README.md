@@ -34,7 +34,7 @@
 > [String, StringBuffer, StringBuilder 차이 및 장단점](https://github.com/whitewise95/TIL/blob/main/Java/String%2C%20StringBuffer%2C%20StringBuilder%20%EC%B0%A8%EC%9D%B4%20%EB%B0%8F%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)
 > [JSON 파싱](https://github.com/whitewise95/TIL/blob/main/Java/JSON%20%ED%8C%8C%EC%8B%B1.md)
 ## SPRING
-- [IOC 그리고 DI에 대해서](https://github.com/whitewise95/TIL/blob/main/Java/Spring/IOC%20%EC%99%80%20DI%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
+- [IOC, DI, Bean](https://github.com/whitewise95/TIL/blob/main/Java/Spring/IOC%20,%20DI,%20Bean.md)
 - [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Java/Spring/DTO%2C%20DAO%2C%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
 - [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%40Scheduled.md)
 - [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)
