@@ -124,7 +124,7 @@ public BlogController(BlogService blogService, BlogRepository blogRepository) {
 ```
 ⭐️ 첫번째 : 의존주입(DI)은 약한 결합을 의미한다.  = 약한 결합도
 
-   두번째 :  Member 클래스에 변화을 주었더니  강한 에 빨간줄이 떴습니다. ㅡ만약 Member를 new 하고있는 코드가 100만개라면? 
+   두번째 :  Member 클래스에 변화을 주었더니  강한결합에 빨간줄이 떴습니다. 만약 Member를 new 하고있는 코드가 100만개라면? 
             100만개를 다 수정해줘야합니다.
               ㄴ 강한 결함 -  유지보수가 힘들다.
               ㄴ 약한 결함 -  유지보수가 쉽다.
