@@ -44,7 +44,7 @@
 - [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)
 
 ## 그 외
-- [JWT토큰](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT%ED%86%A0%ED%81%B0.md)
+- [JWT](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT.md)
 - [API](https://github.com/whitewise95/TIL/blob/main/the_rest/API.md)
 - [REST API](https://github.com/whitewise95/TIL/blob/main/the_rest/REST%20API.md)
 - [나의 프로젝트 구성을 한 눈에](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8F%B4%EB%8D%94%20%EA%B5%AC%EC%A1%B0.md)
