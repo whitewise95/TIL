@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="/js/jquery.twbsPagination.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<style>
+
+    * {
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    #noWrite {
+        margin: 200px auto 0px auto;
+    }
+
+    .myTitle {
+        width: 100%;
+        height: 450px;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.designsori.com/files/attach/images/1110027/590/165/001/402549610a36d6739e0988ced0626d94.PNG');
+        background-position: center;
+        background-size: cover;
+
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .myTitle > button {
+        width: 200px;
+        height: 50px;
+
+        background-color: transparent;
+        color: white;
+
+        border-radius: 50px;
+        border: 1px solid white;
+
+        margin-top: 10px;
+    }
+
+    .myTitle > button:hover {
+        border: 2px solid white;
+    }
+
+    .mycomment {
+        color: gray;
+    }
+
+    .myBlogs {
+        margin: 20px auto 0px auto;
+        width: 95%;
+        max-width: 1200px;
+    }
+
+    .mypost {
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 0px auto;
+        padding: 20px;
+        box-shadow: 0px 0px 3px 0px gray;
+
+        display: none;
+    }
+
+    .mybtns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 20px;
+    }
+
+    .mybtns > button {
+        margin-right: 10px;
+    }
+
+    .paging-div {
+        padding: 15px 0 5px 10px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+</style>
+<script th:inline="javascript">
+
+    $().ready(function () {
+        if ($.cookie('token')) {
+            $.ajaxSetup({
+                headers: {
+                    'Authorization': $.cookie('token')
+                }
+            })
+        } else {
+            window.location.href = '/user/loginView';
+        }
+
+        init();
+
+        $("#updateUpload").click(function () {
+            if (isUpdateUpload) {
+                $("#updateImage").val("");
+                $("#updateImageSubject").attr("placeholder", "png, 387x387 파일만 업로드 가능합니다.");
+                $("#updateUpload").text("이미지 업로드");
+                $("#updateUpload").attr("class", "btn btn-outline-success");
+                isUpdateUpload = false;
+                updateImgUrl = "";
+            } else {
+                $("#updateImage").click();
+            }
+
+        })
+
+        $("#image").change(function () {
+            var ext = $(this).val().split('.').pop().toLowerCase();
+            if (ext != "png") {
+                $("#image").empty();
+                Swal.fire("이미지 파일은 .PNG 만 업로드 가능합니다.");
+                return;
+            }
+            var fileImg = this.files[0];
+            var _URL = window.URL || window.webkitURL;
+            var img = new Image();
+            img.src = _URL.createObjectURL(fileImg);
+            img.onload = function () {
+                var imgWidth = img.width;
+                var imgHeight = img.height;
+
+                if (imgWidth != 387 || imgHeight != 387) {
+                    $("#image").empty();
+                    Swal.fire("387 x 387 사이즈만 등록 가능합니다.");
+                    return;
+                }
+                $("#imageSubject").attr("placeholder", fileImg.name)
+                $("#upload").attr("class", "btn btn-outline-danger");
+                $("#upload").text("이미지 삭제")
+                isUpload = true;
+                fileUpload(fileImg, true);
+            }
+        })
+
+
+        $("#updateImage").change(function () {
+            var ext = $(this).val().split('.').pop().toLowerCase();
+            if (ext != "png") {
+                $("#updateImage").empty();
+                Swal.fire("이미지 파일은 .PNG 만 업로드 가능합니다.");
+                return;
+            }
+            var fileImg = this.files[0];
+            var _URL = window.URL || window.webkitURL;
+            var img = new Image();
+            img.src = _URL.createObjectURL(fileImg);
+            img.onload = function () {
+                var imgWidth = img.width;
+                var imgHeight = img.height;
+
+                if (imgWidth != 387 || imgHeight != 387) {
+                    $("#updateImage").empty();
+                    Swal.fire("387 x 387 사이즈만 등록 가능합니다.");
+                    return;
+                }
+                $("#updateImageSubject").attr("placeholder", fileImg.name)
+                $("#updateUpload").attr("class", "btn btn-outline-danger");
+                $("#updateUpload").text("이미지 삭제")
+                isUpdateUpload = true;
+                fileUpload(fileImg, false);
+            }
+        })
+
+    });
+
+    let imgUrl = "";
+    let updateImgUrl = "";
+    let isUpload = false;
+    let isUpdateUpload = false;
+    let detailId = 0;
+    let isCommentUpdatting = false;
+
+    let defaultImageUri = "images/no-image.png";
+
+    let totalPages = [[${pageable.totalPages}]];
+    let nowPage = [[${page}]];
+
+    function init() {
+        blogPage();
+    }
+
+    function loadBolg(page) {
+        window.location.href = "/?size=6&page=" + (page - 1) + "&sort=createDate,desc&currentPage=" + page;
+
+    }
+
+    function blogPage() {
+        if (totalPages != 0) {
+            $('#pagination').twbsPagination({
+                totalPages: totalPages, // 전체 페이지
+                startPage: nowPage, // 시작(현재) 페이지
+                initiateStartPageClick: false,
+                visiblePages: 10, // 최대로 보여줄 페이지
+                prev: "‹", // Previous Button Label
+                next: "›", // Next Button Label
+                first: '«', // First Button Label
+                last: '»', // Last Button Label
+                onPageClick: function (event, page) {
+                    loadBolg(page)
+                }
+            });
+        }
+
+    }
+
+    let blogInsert = {
+        ready: function () {
+            let writer = $("#writer").val().trim();
+            let password = $("#password").val().trim();
+            let content = $("#content").val()
+            if (blogInsert.valid(writer, password, content)) {
+                blogInsert.insert(writer, password, content);
+            }
+
+        },
+        insert: function (writer, password, content) {
+            debugger;
+            let blog = {
+                "writer": writer,
+                "password": password,
+                "content": content,
+                "imgUrl": imgUrl == "" ? defaultImageUri : imgUrl
+            }
+            $.ajax({
+                type: "POST",
+                url: "/blog",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(blog),
+                success: function (response) {
+                    window.location.reload();
+                }
+            })
+        },
+        valid: function (writer, password, content) {
+            if (writer == "" || writer.length > 8) {
+                $("#writer").val("");
+                Swal.fire("작성자를 다시 확인해주세요.");
+                return false;
+            }
+            if (password == "" || password.length < 4 || password.length > 8) {
+                $("#password").val("");
+                Swal.fire("패스워드를 다시 확인해주세요");
+                return false;
+            }
+            if (content == "") {
+                $("#content").val("");
+                Swal.fire("글 내용을 다시 확인해주세요");
+                return false;
+            }
+            return true;
+        }
+    }
+
+    let blogUpdate = {
+        modalShow: function (nav, id, content, writer, imgUrl) {
+            debugger;
+            blogFunction.closeBox();
+            if (nav) {
+                if (imgUrl != defaultImageUri && imgUrl != defaultImageUri) {
+                    let url = imgUrl.split("/")[1];
+                    url = url == undefined ? imgUrl.substring(6) : url;
+                    $("#updateImageSubject").attr("placeholder", url);
+                    $("#updateUpload").attr("class", "btn btn-outline-danger");
+                    $("#updateUpload").text("이미지 삭제")
+                    updateImgUrl = imgUrl;
+                    isUpdateUpload = true;
+                } else {
+                    $("#updateImage").val("");
+                    $("#updateImageSubject").attr("placeholder", "png, 387x387 파일만 업로드 가능합니다.");
+                    $("#updateUpload").attr("class", "btn btn-outline-success");
+                    $("#updateUpload").text("이미지 등록")
+                    isUpdateUpload = false;
+                }
+
+                $("#updateWriter").val(writer);
+                $("#updateContent").val(content);
+                $("#updateId").val(id);
+                $("#updateBox").show();
+
+
+            } else {
+                $("#updateBox").hide();
+            }
+        },
+        ready: function () {
+            let password = $("#checkedPassword").val().trim();
+            let writer = $("#updateWriter").val().trim();
+            let content = $("#updateContent").val()
+            let img = "";
+
+            if (isUpdateUpload) {
+                img = updateImgUrl.split("/")[1];
+                img = updateImgUrl.substring(0, 6) + "/" + updateImgUrl.substring(img == undefined ? 6 : 7)
+            } else {
+                img = defaultImageUri;
+            }
+            let id = $("#updateId").val();
+            if (blogUpdate.valid(writer, password, content)) {
+                blogUpdate.update(id, writer, password, content, img);
+            }
+        },
+        update: function (id, writer, password, content, img) {
+            let blog = {
+                "writer": writer,
+                "password": password,
+                "content": content,
+                "imgUrl": img
+            }
+            debugger
+            $.ajax({
+                type: "PUT",
+                url: "/blog/" + id,
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(blog),
+                success: function (response) {
+                    window.location.reload();
+                },
+                error: function (e) {
+                    Swal.fire("패스워드가 틀렸습니다.");
+                }
+            })
+        },
+        valid: function (writer, password, content) {
+            if (writer == "" || writer.length > 8) {
+                $("#writer").val("");
+                Swal.fire("작성자를 다시 확인해주세요.");
+                return false;
+            }
+            if (password == "" || password.length < 4 || password.length > 8) {
+                $("#password").val("");
+                Swal.fire("패스워드를 다시 확인해주세요");
+                return false;
+            }
+            if (content == "") {
+                $("#content").val("");
+                Swal.fire("글 내용을 다시 확인해주세요");
+                return false;
+            }
+            return true;
+        }
+    };
+
+    let blogDelete = {
+        modalShow: function (id) {
+            $('#post-box').hide();
+            $("#deleteId").val(id);
+            $("#modal2").show();
+        },
+        ready: function () {
+            let password = $("#deletePassword").val().trim();
+            let id = $("#deleteId").val()
+            if (blogDelete.valid(password)) {
+                blogDelete.delete(id, password);
+            }
+        },
+        delete: function (id, password) {
+            let blog = {
+                "password": password
+            }
+            $.ajax({
+                type: "DELETE",
+                url: "/blog/" + id,
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(blog),
+                success: function (response) {
+                    window.location.reload();
+                },
+                error: function (e) {
+                    Swal.fire("패스워드가 틀렸습니다.");
+                }
+            })
+        },
+        valid: function (password) {
+
+            if (password == "" || password.length < 4 || password.length > 8) {
+                $("#password").val("");
+                Swal.fire("패스워드를 다시 확인해주세요");
+                return false;
+            }
+            return true;
+        }
+    }
+
+    let blogDetail = {
+        modalShow: function (nav, id) {
+            detailId = id;
+            if (nav) {
+                blogDetail.find(detailId);
+            } else {
+                $("#detailBox").hide();
+            }
+        },
+        find: function (id) {
+            $.ajax({
+                type: "GET",
+                url: "/comment/" + id,
+                success: function (response) {
+                    $("#comments").empty();
+                    if (response.length == 0) {
+                        $("#comments").append(`
+                              <div class="">
+                                <strong style="margin-left: 35%">아직 댓글이 없습니다.</strong>
+                              </div>
+                            `)
+                    } else {
+                        response.forEach(comment => {
+                            $("#comments").append(`
+                              <div class="shadow p-3 mb-5 bg-body rounded" id="${comment.id}">
+                                <div><strong class="${comment.id}-false" id="${comment.id}-strong" value="${comment.comment}" >${comment.comment}</strong><input type="text" class="${comment.id}-true" id="${comment.id}-input" value="${comment.comment}" style="display: none"></div>
+                                <div style="margin-left: 70%;">작성자 : <span>${comment.userId}</span>
+                                </div>
+                                <div style="display: flex">
+                                 <button class="${comment.id}-false" style="margin-left: 35%" onclick="blogDetail.updateReady(${comment.id}, true)">수정</button>
+                                 <button class="${comment.id}-false" style="margin-left: 2%" onclick="blogDetail.delete(${comment.id})">삭제</button>
+                                 <button class="${comment.id}-true"style="margin-left: 35%; display: none" onclick="blogDetail.update(${comment.id})">완료</button>
+                                 <button class="${comment.id}-true"style="margin-left: 2%; display: none" onclick="blogDetail.updateReady(${comment.id}, false)">취소</button>
+                                </div>
+                              </div>
+                            `)
+                        })
+                    }
+
+
+                    $("#detailBox").show();
+                },
+                error: function (e) {
+                }
+            })
+        },
+
+        writer: function () {
+            let data = {
+                "comment": $("#comment").val()
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "/comment/" + detailId,
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    if (response.statusCode == 200) {
+                        $("#comment").val("")
+                        blogDetail.find(detailId);
+                    } else {
+                        Swal.fire(response.message);
+                    }
+                },
+                error: function (e) {
+                    Swal.fire("시스템 오류");
+                }
+            })
+
+        },
+        updateReady: function (id, nav) {
+            if (isCommentUpdatting && nav) {
+                return Swal.fire("이미 수정중 입니다.");
+            }
+            if (nav) {
+                isCommentUpdatting = true;
+                $(`.${id}-true`).show();
+                $(`.${id}-false`).hide();
+            } else {
+                isCommentUpdatting = false;
+                $(`#${id}-input`).val($(`#${id}-strong`)[0].innerText);
+                $(`.${id}-false`).show();
+                $(`.${id}-true`).hide();
+            }
+
+        },
+        update: function (id) {
+            debugger;
+            data = {
+                "comment": $(`#${id}-input`).val()
+            }
+
+            $.ajax({
+                type: "PUT",
+                url: "/comment/" + id,
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(data),
+                success: function (response) {
+                    if (response.statusCode == 200) {
+                        isCommentUpdatting = false;
+                        $(`#${id}-strong`)[0].innerText = $(`#${id}-input`).val();
+                        $(`.${id}-false`).show();
+                        $(`.${id}-true`).hide();
+                    } else {
+                        $(`#${id}-input`).val($(`#${id}-strong`)[0].innerText);
+                        $(`.${id}-false`).show();
+                        $(`.${id}-true`).hide();
+                        Swal.fire(response.message);
+                    }
+                },
+                error: function (e) {
+                    Swal.fire("시스템 오류");
+                }
+            })
+        },
+        delete: function (id) {
+            if (!isCommentUpdatting) {
+                $.ajax({
+                    type: "DELETE",
+                    url: "/comment/" + id,
+                    success: function (response) {
+                        if (response.statusCode == 200) {
+                            $(`#${id}`).hide();
+                        } else {
+                            Swal.fire(response.message);
+                        }
+                    },
+                    error: function (e) {
+                        Swal.fire("시스템 오류");
+                    }
+                })
+            } else {
+                Swal.fire("수정중입니다.");
+            }
+        }
+
+
+    }
+
+
+    function fileUpload(file, nav) {
+        var form_data = new FormData();
+        form_data.append('file', file);
+
+        $.ajax({
+            data: form_data,
+            type: "POST",
+            url: '/common/fileUpload',
+            cache: false,
+            contentType: false,
+            enctype: 'multipart/form-data',
+            processData: false,
+            success: function (url) {
+                if (nav) {
+                    imgUrl = url;
+                } else {
+                    updateImgUrl = url;
+                }
+
+            },
+            error: function (e) {
+
+            }
+        });
+    }
+
+
+    let blogFunction = {
+        openBox: function () {
+            $('#post-box').show();
+        },
+        closeBox: function () {
+            $("#writer").val("");
+            $("#password").val("");
+            $("#image").val("");
+            $("#content").val("");
+            if (isUpload) {
+                $("#upload").click();
+            }
+            $('#post-box').hide();
+        }
+    }
+
+    let modal = {
+        open: function (massage) {
+            $("#modalMassage").text(massage);
+            $("#modal").show();
+        },
+        close: function (nav) {
+            if (nav) {
+                $("#modal2").hide();
+            } else {
+                $("#modal").hide();
+            }
+
+        }
+
+    }
+
+    function mouseover(target, id) {
+        let see = "#" + id + "-see";
+        let img = "#" + id + "-img";
+        $(target).addClass("border border-white border border-2");
+        $(see).show();
+        $(img).css("filter", "opacity(30%)");
+    }
+
+    function mouseout(target, id) {
+        let see = "#" + id + "-see";
+        let img = "#" + id + "-img";
+        $(target).removeClass("border border-white border border-2");
+        $(see).hide();
+        $(img).css("filter", "opacity(100%)");
+    }
+
+    function test(){
+        debugger;
+        $.ajaxSetup({
+            headers: {
+                'Authorization': null
+            }
+
+        });
+
+        $.removeCookie('token', {path: '/user'});
+        $.removeCookie('token', {path: '/'});
+        window.location.reload();
+    }
+
+
+</script>
+
+
+<body>
+<div class="myTitle">
+  <h1>MyBlog</h1>
+  <button onclick="blogFunction.openBox()">기록하기</button>
+  <button onclick="test()">로그아웃</button>
+</div>
+<div class="mypost" id="post-box">
+  <div class="form-floating mb-3">
+    <input id="writer" type="text" class="form-control" minlength="1" required title="작성자를 입력해주세요"
+           style="height: 50px" placeholder="name@example.com">
+    <label>작성자</label>
+  </div>
+  <div class="input-group mb-3">
+    <label class="input-group-text">비밀번호</label>
+    <input id="password" type="password" class="form-control" pattern=".{4,8}" required title="4자에서 8자이하로 입력해주세요"
+           placeholder="4자~8자 이하로 입력해주세요.">
+  </div>
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-success" type="button" id=upload>이미지 올기기</button>
+    <input type="text" class="form-control" placeholder="png, 387x387 파일만 업로드 가능합니다." id="imageSubject"
+           aria-label="Example text with button addon"
+           aria-describedby="button-addon1" disabled>
+    <input type="file" style="display: none" id="image" accept="image/png"/>
+  </div>
+  <div class="form-floating">
+        <textarea id="content" class="form-control" placeholder="Leave a comment here" pattern=".{1,255}" required
+                  title="1자에서 255자이하로 입력해주세요"
+                  style="height: 250px; resize: none;"></textarea>
+    <label>글 내용</label>
+  </div>
+  <div class="mybtns">
+    <button onclick="blogInsert.ready()" type="submit" class="btn btn-dark" id="readButton">기록하기</button>
+    <button onclick="blogFunction.closeBox()" type="button" class="btn btn-outline-dark">닫기</button>
+  </div>
+</div>
+<div class="myBlogs">
+  <div class="row row-cols-1 row-cols-md-3 g-3" id="blog-box">
+    <th:block th:if="${pageable.content.size() != 0}">
+      <div th:each="blog : ${pageable.content}">
+        <div class="col" id="cardBox" th:onmouseover="|mouseover(this, ${blog.id})|"
+             th:onmouseout="|mouseout(this, ${blog.id})|">
+          <div class="card h-100">
+            <div style="height: 387px;  width: 387px;">
+              <img th:src="${blog.imgUrl}" th:id="${blog.id} + '-img'" class="card-img-top">
+            </div>
+            <div style="position:absolute; top:31%; left:31%; display: none;" th:id="${blog.id} + '-see'">
+              <button class="btn btn-outline-secondary"
+                      th:attr="onclick=|blogUpdate.modalShow(true, ${blog.id}, '${blog.content}', '${blog.writer}', '${blog.imgUrl}')|">
+                수정
+              </button>
+              <button class="btn btn-outline-secondary" th:attr="onclick=|blogDetail.modalShow(true, ${blog.id})|">댓글
+              </button>
+              <button class="btn btn-outline-danger" th:attr="onclick=|blogDelete.modalShow(${blog.id})|">삭제</button>
+            </div>
+            <div class="card-body">
+              <div style="display: flex">
+                <p class="mycomment" style="margin-left: 5%" th:text="${blog.writer}"></p>
+                <p class="mycomment" style="margin-left: 25%" th:text="${blog.createDate}"></p>
+              </div>
+              <p class="card-text" th:text="${blog.content}"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </th:block>
+    <th:block th:if="${pageable.content.size() == 0}">
+      <div role="status" id="noWrite">
+        <h2>아직 글이 없습니다.</h2>
+      </div>
+    </th:block>
+  </div>
+</div>
+
+<div class="modal" tabindex="-2" style="margin: 15% 5%" data-bs-backdrop="static" data-bs-keyboard="false"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content shadow p-3 mb-5 bg-body rounded">
+      <div class="modal-header">
+        <h5 class="modal-title">안내</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                onclick="modal.close()"></button>
+      </div>
+      <div class="modal-body">
+        <p id="modalMassage"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="modal.close()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">삭제</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                onclick="modal.close(true)"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <input type="hidden" id="deleteId">
+          <label class="input-group-text">비민번호</label>
+          <input id="deletePassword" type="password" class="form-control" pattern=".{4,8}" required
+                 title="4자에서 8자이하로 입력해주세요"
+                 placeholder="4자~8자 이하로 입력해주세요.">
+        </div>
+      </div>
+      <div class="modal-footer mybtns">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="blogDelete.ready()">삭제</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="modal.close(true)">취소</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="updateBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">수정</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                onclick="blogUpdate.modalShow(false)"></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="updateId">
+        <div class="form-floating mb-3">
+          <input id="updateWriter" type="text" class="form-control" minlength="1" required title="작성자를 입력해주세요"
+                 style="height: 50px" placeholder="name@example.com">
+          <label>작성자</label>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text">비밀번호</label>
+          <input id="checkedPassword" type="password" class="form-control" pattern=".{4,8}" required
+                 title="4자에서 8자이하로 입력해주세요"
+                 placeholder="4자~8자 이하로 입력해주세요.">
+        </div>
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-success" type="button" id=updateUpload>이미지 올기기</button>
+          <input type="text" class="form-control" placeholder="png, 387x387 파일만 업로드 가능합니다." id="updateImageSubject"
+                 aria-label="Example text with button addon"
+                 aria-describedby="button-addon1" disabled>
+          <input type="file" style="display: none" id="updateImage" accept="image/png"/>
+        </div>
+        <div class="form-floating">
+        <textarea id="updateContent" class="form-control" placeholder="Leave a comment here" pattern=".{1,255}" required
+                  title="1자에서 255자이하로 입력해주세요"
+                  style="height: 250px; resize: none;"></textarea>
+          <label>글 내용</label>
+        </div>
+      </div>
+      <div class="modal-footer mybtns">
+        <button onclick="blogUpdate.ready()" type="submit" class="btn btn-dark" id="updateButton">수정하기</button>
+        <button onclick="blogUpdate.modalShow(false)" type="button" class="btn btn-outline-dark">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="detailBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailModalLabel">댓글</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                onclick="blogDetail.modalShow(false)"></button>
+      </div>
+      <div class="modal-body">
+        <div id="comments" style="overflow-y: scroll;max-height: 500px;">
+        </div>
+      </div>
+      <div class="modal-footer" style="display: flex;">
+        <input type="text" style="width: 80%;margin-right: 1%;" maxlength="40" id="comment">
+        <button class="btn btn-dark" onclick="blogDetail.writer()">작성</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="paging-div">
+  <ul class="pagination" id="pagination">
+
+  </ul>
+</div>
+</body>
+</html>
