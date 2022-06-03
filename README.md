@@ -41,7 +41,7 @@
 - [Spring Boot 프로젝트 외부 경로 파일 접근(webConfig)](https://github.com/whitewise95/TIL/blob/main/Java/Spring/Spring%20Boot%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%99%B8%EB%B6%80%20%EA%B2%BD%EB%A1%9C%20%ED%8C%8C%EC%9D%BC%20%EC%A0%91%EA%B7%BC(webConfig).md)
 - [MVC패턴](https://github.com/whitewise95/TIL/blob/main/Java/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)
 ## JPA
-- [JPA란?](https://github.com/whitewise95/TIL/blob/main/Java/JPA/JPA%EB%9E%80%3F.md)
+- [JPA란?](https://github.com/whitewise95/TIL/blob/main/Java/JPA/JPA%EB%9E%80%3F.md](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%8C%80%ED%95%B4%EC%84%9C.md)
 ## 그 외
 - [JWT토큰](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT%ED%86%A0%ED%81%B0.md)
 - [API](https://github.com/whitewise95/TIL/blob/main/the_rest/API.md)
