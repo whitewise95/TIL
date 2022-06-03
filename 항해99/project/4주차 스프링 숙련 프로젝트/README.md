@@ -17,6 +17,33 @@
 
 3. Ajax에 헤더에 데이터를 태워 통신하는 법을 알게되었다. 토큰을 헤더 담아 서버에서 받는데 Ajax 기본적이 통신만 해보았지 헤더를 설정할 수 있다는걸 알게되었다.  
 
+# #보안할 점 및 문제해결한 부분
+
+### RestFul하게 API설계
+RestFul하게 API설계하고 싶어서 느리더라도 천천히 프로그래밍을 했다. 하지만 다 끝나고 생각해보니 계층구도로 URI를 잘못 설계한 느낌이다. 보안을 하고싶다.  
+<br>
+현재 기술매니저님께 "데이터를 쓰지 않았도 아래 보안할 부분처럼 글 ID를 보내야하나요?" 라고 질문을 남겼는데 답변을 기다리고있다.
+```
+현재 uri 구성
+/comment/{댓글ID}
+
+보안하고싶은 부분
+/comment/{글ID}/{댓글ID}
+```
+
+### dependensy 버전 문제?!
+기존에 JWT 라이브러리를 'com.auth0:java-jwt:3.13.0' 를 써서 JWT를 구현했는데 우분투환경에 배포하면 아래와 같이 에러가 났다.  
+<br>
+나와 같은 문제를 겪는 사람은 아직 나의 서치능력으론 못찾았지만 group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1' 라이브러리로  
+변경하여 JWT부분을 다시 구현하였다.
+```
+Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.interfaces.JWTVerifier
+```
+
+
+
+
+
 # # 추가된 API명세  
 
 ### 📍 회원관리 API  
@@ -99,7 +126,7 @@ Header =  Authorization : "토큰"
 }
 ```
 
-# #스프링 시큐리티를 사용해 회원관리하는 방법을 순서도
+# #스프링 시큐리티를 사용해 회원관리하는 방법을 순서도로 
 
 ### 📍 회원가입 순서도  
 ![success Handler (2)](https://user-images.githubusercontent.com/81284265/171804120-62c32569-1d77-4f6e-8ba7-5249de8f0a14.png)  
