@@ -70,6 +70,7 @@
 - [1주차 웹 미니프로젝트(Python)](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/lyrics_guide)
 - [2주차 객체지향 과제](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/sparta_java)
 - [3주차 스프링입문 프로젝트](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/sparta_spring)
+- [4주차 스프링숙련 프로젝트](https://github.com/whitewise95/TIL/tree/main/%ED%95%AD%ED%95%B499/project/4%EC%A3%BC%EC%B0%A8%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%88%99%EB%A0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
 ## 소스
 - [스프링 부트와 AWS로 구현하는 웹서비스 따라하기 example](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice)  
