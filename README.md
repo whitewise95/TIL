@@ -38,10 +38,16 @@
 - [DTO, DAO, VO에 대해서](https://github.com/whitewise95/TIL/blob/main/Java/Spring/DTO%2C%20DAO%2C%20VO%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C.md)
 - [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%40Scheduled.md)
 - [Spring Boot 프로젝트 외부 경로 파일 접근(webConfig)](https://github.com/whitewise95/TIL/blob/main/Java/Spring/Spring%20Boot%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%99%B8%EB%B6%80%20%EA%B2%BD%EB%A1%9C%20%ED%8C%8C%EC%9D%BC%20%EC%A0%91%EA%B7%BC(webConfig).md)
-- [MVC패턴](https://github.com/whitewise95/TIL/blob/main/Java/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)
-## JPA  
-- [JPA란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%8C%80%ED%95%B4%EC%84%9C.md)
-- [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)
+> [MVC패턴](https://github.com/whitewise95/TIL/blob/main/Java/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)  
+## JPA
+> [JPA란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%8C%80%ED%95%B4%EC%84%9C.md)  
+> [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)  
+## SpringSecurity(스프링 시큐리티)
+> [스프링 시큐리티란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)  
+> [JWT 와 Security 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)  
+
+## Security
+> [인증과 인가](https://github.com/whitewise95/TIL/blob/main/Security/%EC%9D%B8%EC%A6%9D%EA%B3%BC%20%EC%9D%B8%EA%B0%80.md)  
 
 ## 그 외
 - [JWT](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT.md)
