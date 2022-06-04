@@ -5,7 +5,8 @@
 # #이번 프로젝트에서 배운점 및 알게된 점
 > 링크를 타고 들어가면 정리해둔 내용을 확인 할 수 있습니다.
 
-1. [스프링 시큐리티]()를 깊이 알게되었다. 기존에 " [스프링 부트와 AWS로 구현하는 웹서비스 따라하기](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice) " 라는 책 따라서 한번 구현 해본적이 있지만 이렇게 깊이 공부까지 못했고 나의 기존 서비스에 적용해보고 난 에러들을 눈으로 볼 수 있었다.  
+1. [스프링 시큐리티](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)와 [인증과 인가]()에  대해서도 알게되었다. 기존에 " [스프링 부트와 AWS로 구현하는 웹서비스 따라하기](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice) " 라는 책 따라서 한번 구현 해본적이 있지만 이렇게 깊이 공부까지 못했고 나의 기존 서비스에 적용해보고 난 에러들을 눈으로 볼 수 있었다.
+
 ```
   첫번째 - 기존의 우분투환경에 이미지를 업로드하는 로직도 png 파일이 깨져서 표시되었다 이런 사소한 부분까지
           시큐리티에서 인가와 인증을 설정 해줘야한다.
@@ -53,7 +54,7 @@ Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.interfaces.JWTVerifie
 | 회원가입 | POST   | /user/signup  | 타입1     | 타입3      |
 | 로그인  | POST   | /user         | 타입2     | 타입3      |  
 
-```
+```JSON
 ⭐️ 타입1
 
 {
@@ -64,7 +65,7 @@ Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.interfaces.JWTVerifie
 }
 ```  
 
-```
+```JSON
 ⭐️ 타입2
 
 {
@@ -72,7 +73,8 @@ Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.interfaces.JWTVerifie
   "password" : " "
 }
 ```  
-```
+
+```JSON
 ⭐️ 타입3
 
 {
@@ -96,7 +98,7 @@ Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.interfaces.JWTVerifie
 | 댓글 삭제 | DELETE | /comment/{commentId}  | 타입4     | 타입6      |
 | 댓글 수정 | PUT    | /comment/{commentId}  | 타입4     | 타입6      |
 
-```
+```JSON
 ⭐️ 타입4
 
 Header =  Authorization : "토큰"
@@ -106,7 +108,7 @@ Header =  Authorization : "토큰"
 }
 ```
 
-```
+```JSON
 ⭐️ 타입5
 {
     "createDate": "2022.06.03 11:22:43",
@@ -117,7 +119,7 @@ Header =  Authorization : "토큰"
     "userId": "admin"
 }
 ```  
-```
+```JSON
 ⭐️ 타입6
     
 {
