@@ -14,7 +14,7 @@
   두번째 - 모든 API에 대한 인가와 인증관리를 해줘야한다.
 ```  
 
-2. [스프링 시큐리티를 이용한 JWT]()를 알게 되었다. 지금까지 JWT는 단독으로 사용하는 줄 알았는데 Filter Chain에 포함시킬 Filter를 만들어 인가와 인증을 적용시킬 수 있다.  
+2. [스프링 시큐리티를 이용한 JWT](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)를 알게 되었다. 지금까지 JWT는 단독으로 사용하는 줄 알았는데 Filter Chain에 포함시킬 Filter를 만들어 인가와 인증을 적용시킬 수 있다.  
 
 3. Ajax에 헤더에 데이터를 태워 통신하는 법을 알게되었다. 토큰을 헤더 담아 서버에서 받는데 Ajax 기본적이 통신만 해보았지 헤더를 설정할 수 있다는걸 알게되었다.  
 
