@@ -7,16 +7,17 @@
 1. [java](#java)
 2. [spring](#spring)
 3. [springsecurity](#springsecurity스프링-시큐리티)
-4. [aws](#aws)
-5. [css](#css)
-6. [html](#html)
-7. [python](#파이썬)
-8. [security](#security)
-9. [algorithm](#알고리즘)
-10. [항해99](#항해99)
-11. [템플릿엔진](#템플릿엔진)
-12. [소스](#소스)
-13. [그 외](#그-외)
+4. [DataBase](#database)
+5. [aws](#aws)
+6. [css](#css)
+7. [html](#html)
+8. [python](#파이썬)
+9. [security](#security)
+10. [algorithm](#알고리즘)
+11. [항해99](#항해99)
+12. [템플릿엔진](#템플릿엔진)
+13. [소스](#소스)
+14. [그 외](#그-외)
 
 <br>
 <br>
@@ -88,16 +89,6 @@
 <br>
 <br>  
 
-## JPA
-> [JPA란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%8C%80%ED%95%B4%EC%84%9C.md)  
-> [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)  
-
-<br>
-<br>
-<br>
-<br>   
-
-
 ## SpringSecurity(스프링 시큐리티)
 > [스프링 시큐리티란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)  
 > [JWT 와 Security 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)  
@@ -114,6 +105,24 @@
 <br>
 <br>
 <br>  
+
+## DataBase
+> [JPA와 SQL](https://github.com/whitewise95/TIL/blob/main/DataBase/ORM%EA%B3%BC%20SQL.md)  
+>> JPA
+>>> [JPA란?](https://github.com/whitewise95/TIL/blob/main/DataBase/JPA/JPA%EB%8C%80%ED%95%B4%EC%84%9C.md)  
+>>> [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/DataBase/JPA/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)  
+
+<br>
+<br>
+<br>
+<br>   
+
+
+<br>
+<br>
+<br>
+<br>  
+
 
 ## 그 외
 - [JWT](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT.md)
