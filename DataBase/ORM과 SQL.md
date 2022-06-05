@@ -1,14 +1,16 @@
 # 목차
 <br>  
-1. [들어가는 글](#들어가는-글)
-2. [영속성](#영속성)
-3. [영구적인 객체](#영구적인-객체)
-4. [Persistence Framework](#Persistence-Framework)
-5. [SQL이란?](#SQL이란?)
-6. [SQL의 규칙](#SQL의-규칙)
-7. [ORM이란?](#ORM이란?)
-8. [ORM의 규칙](#ORM의-규칙)
-9. [마치는 글](#마치는-글)
+
+
+1. [들어가는 글](#들어가는-글)  
+2. [영속성](#영속성)  
+3. [영구적인 객체](#영구적인-객체)  
+4. [Persistence Framework](#persistence-framework)  
+5. [SQL이란?](#sql이란)  
+6. [SQL의 규칙](#sql의-규칙)  
+7. [ORM이란?](#orm이란)  
+8. [ORM의 규칙](#orm의-규칙)  
+9. [마치는 글](#마치는-글)  
  
 
 <br>  
