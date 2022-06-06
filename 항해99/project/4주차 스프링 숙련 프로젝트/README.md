@@ -5,7 +5,7 @@
 # #이번 프로젝트에서 배운점 및 알게된 점
 > 링크를 타고 들어가면 정리해둔 내용을 확인 할 수 있습니다.
 
-1. [스프링 시큐리티](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)와 [인증과 인가](https://github.com/whitewise95/TIL/tree/main/Security)에  대해서도 알게되었다. 기존에 " [스프링 부트와 AWS로 구현하는 웹서비스 따라하기](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice) " 라는 책 따라서 한번 구현 해본적이 있지만 이렇게 깊이 공부까지 못했고 나의 기존 서비스에 적용해보고 난 에러들을 눈으로 볼 수 있었다.
+1. [스프링 시큐리티](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)와 [인증과 인가]([https://github.com/whitewise95/TIL/tree/main/Security](https://github.com/whitewise95/TIL/blob/main/Security/%EC%9D%B8%EC%A6%9D%EA%B3%BC%20%EC%9D%B8%EA%B0%80.md))에  대해서도 알게되었다. 기존에 " [스프링 부트와 AWS로 구현하는 웹서비스 따라하기](https://github.com/whitewise95/JPA_JUnitTest_Gradle_Oauth2_Practice) " 라는 책 따라서 한번 구현 해본적이 있지만 이렇게 깊이 공부까지 못했고 나의 기존 서비스에 적용해보고 난 에러들을 눈으로 볼 수 있었다.
 
 ```
   첫번째 - 기존의 우분투환경에 이미지를 업로드하는 로직도 png 파일이 깨져서 표시되었다 이런 사소한 부분까지
