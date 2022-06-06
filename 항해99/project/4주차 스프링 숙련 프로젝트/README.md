@@ -78,13 +78,13 @@ Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.interfaces.JWTVerifie
 ⭐️ 타입3
 
 {
-   id : 
-   content :
-   password :
-   imgUrl :
-   writer :
-   createDate :
-   ModifiedDate : 
+  "id" : 
+  "content" : ""
+  "password" : ""
+  "imgUrl" : ""
+  "writer" : ""
+  "createDate" : ""
+  "ModifiedDate" : ""
 }
 ```
 
