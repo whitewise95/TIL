@@ -136,6 +136,7 @@
 
 ## Security
 - [인증과 인가](https://github.com/whitewise95/TIL/blob/main/Security/%EC%9D%B8%EC%A6%9D%EA%B3%BC%20%EC%9D%B8%EA%B0%80.md)  
+- [JWT](https://github.com/whitewise95/TIL/blob/main/Security/JWT.md)
 
 
 <br>
@@ -149,7 +150,6 @@
 
 
 ## 그 외
-- [JWT](https://github.com/whitewise95/TIL/blob/main/the_rest/JWT.md)
 - [API](https://github.com/whitewise95/TIL/blob/main/the_rest/API.md)
 - [REST API](https://github.com/whitewise95/TIL/blob/main/the_rest/REST%20API.md)
 - [나의 프로젝트 구성을 한 눈에](https://github.com/whitewise95/TIL/blob/main/the_rest/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%8F%B4%EB%8D%94%20%EA%B5%AC%EC%A1%B0.md)
