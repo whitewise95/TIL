@@ -37,7 +37,8 @@
 
 ## JAVA
 #### 스트림(Stream)
-- [스트림(Stream)](https://github.com/whitewise95/TIL/tree/main/Java/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream))
+- [스트림(Stream)의 개념](https://github.com/whitewise95/TIL/blob/main/Java/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%98%20%EA%B0%9C%EB%85%90.md)
+- [스트림 사용방법](https://github.com/whitewise95/TIL/blob/main/Java/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)/%EC%8A%A4%ED%8A%B8%EB%A6%BC%20%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95.md)
 #### 객체지향
 - [객체지향이란?](https://github.com/whitewise95/TIL/blob/main/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)  
 - [JVM](https://github.com/whitewise95/TIL/blob/main/Java/JVM.md)  
