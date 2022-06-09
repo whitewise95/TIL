@@ -1,5 +1,7 @@
 
-![화면 캡처 2022-05-25 102746](https://user-images.githubusercontent.com/81284265/170159259-6ba7e0b2-36a5-4544-bf2a-8a75acf5c073.png)
+![화면 캡처 2022-06-09 150430](https://user-images.githubusercontent.com/81284265/172775970-447289d7-ac8e-4de0-975f-88a8c1c03f38.png)
+
+
 # 페이징
 - JS  
 [페이징](https://github.com/whitewise95/TIL/tree/main/HTML/paging)
