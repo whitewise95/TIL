@@ -1,6 +1,12 @@
-# 목차
-1) [CORS란?](CORS-란?)
-2) []()
+# 목차  
+
+1) [CORS란?](#-cors란)
+2) [CORS는 왜 필요한가요?](#-cors는-왜-필요한가요)
+3) [CORS는 어떻게 동작하나요?](#-cors는-어떻게-동작하나요)
+     - [simple-requests인-경우](#simple-requests인-경우)
+     - [preflight 요청일 경우 ](#preflight-요청일-경우)
+
+4) [출처는 어떻게 비교되나요?](#-출처는-어떻게-비교되나요)
 
 
 
@@ -113,7 +119,11 @@ Simple requqets라고 부릅니다.
     preflight요청에 대한 대한 응답으로 실제 요청 시 사용할 수 있는 HTTP 헤더를 나타냅니다.
 ```
 
-# #출처는 어떻게 비교되나요?  
+<br>
+<br>
+
+
+# # 출처는 어떻게 비교되나요?  
 출처는 아래 이미지에서 protocol + Host + Path를 합친것을 의미한다. 
 ![url](https://user-images.githubusercontent.com/81284265/173223279-a9306616-1bbe-4d55-b775-ae16a1f486a3.png)
 
