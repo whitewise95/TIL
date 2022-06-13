@@ -38,6 +38,8 @@ ex)
 
 # # CORS는 어떻게 동작하나요?
 
+![화면 캡처 2022-06-13 195012](https://user-images.githubusercontent.com/81284265/173338229-b959cead-cc0a-4b05-ac1a-6a4175c5da40.png)  
+
 ### Simple requests인 경우
 - 서버로 요청을 합니다.
 - `서버의 요청`이 왔을 때 `브라우저가 요청한 Origin과 응답한 헤더 Access-Control-Request-Headers의 값을 비교`하여 `유효한 요청`이라면  
@@ -70,6 +72,8 @@ Simple requqets라고 부릅니다.
 <br>
 
 ### preflight 요청일 경우  
+
+![화면 캡처 2022-06-13 194959](https://user-images.githubusercontent.com/81284265/173338220-4042da41-6410-4574-85b4-0878ddf5b543.png)  
 
 - `Origin헤더에 현재 요청하는 origin과, Access-Control-Request-Method헤더에 요청`하는  
 `HTTP method와 Access-Control-Request-Headers요청 시 사용할 헤더를 OPTIONS 메서드로 서버로 요청`합니다. 
@@ -125,9 +129,17 @@ Simple requqets라고 부릅니다.
 
 # # 출처는 어떻게 비교되나요?  
 출처는 아래 이미지에서 protocol + Host + Path를 합친것을 의미한다. 
-![url](https://user-images.githubusercontent.com/81284265/173223279-a9306616-1bbe-4d55-b775-ae16a1f486a3.png)
 
+![제목 없는 디자인](https://user-images.githubusercontent.com/81284265/173337448-e5fbecea-be0f-419c-a7f6-d2812ae88abb.png)  
 
+| URL                                             | 결과    | 이유                       |
+|-------------------------------------------------|-------|--------------------------|
+| https://github.com/whitewise95                  | 같은 출처 | Protocal, Host, Port 동일  |
+| https://github.com/whitewise95?tab=repositories | 같은 출처 | Protocal, Host, Port 동일  |
+| https://github.com/whitewise95?tab=packages     | 같은 출처 | Protocal, Host, Port 동일  |
+| http://github.com/whitewise95                   | 다른 출처 | Protocal 다름              |
+| https://github.com:81/whitewise95               | 다른 출처 | Port 다름                  |
+| https://github/whitewise95                      | 다른 출처 | Host 다름                  |
 
 
 
