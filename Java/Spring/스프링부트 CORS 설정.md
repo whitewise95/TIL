@@ -20,5 +20,5 @@ public class WebConfig implements WebMvcConfigurer {
 ```
 
 # #COMMENT
-스프링 시큐리티도 사용한다면 시큐리티 config에도 따로 설정을 해줘야한다.  
+스프링 시큐리티도 사용한다면 시큐리티 config에 설정을 해줘야한다. 한 곳만해주면 된다!
 [스프링 시큐리티 CORS 설정하는 방법](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20CORS%EC%84%A4%EC%A0%95.md)
