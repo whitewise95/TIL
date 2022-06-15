@@ -168,7 +168,7 @@
 - [3주차 스프링입문 프로젝트](https://github.com/whitewise95/voyage99/tree/main/3%EC%A3%BC%EC%B0%A8%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9E%85%EB%AC%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)  
 - [4주차 스프링숙련 프로젝트](https://github.com/whitewise95/voyage99/tree/main/4%EC%A3%BC%EC%B0%A8%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%88%99%EB%A0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 - [5주차 스프링심화 프로젝트](https://github.com/whitewise95/voyage99/tree/main/5%EC%A3%BC%EC%B0%A8%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%AC%ED%99%94%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)  
-
+- [6주차 자바 및 리액트 미니 프로젝트](https://github.com/whitewise95/voyage99/tree/main/6%EC%A3%BC%EC%B0%A8%20%EC%9E%90%EB%B0%94%20%EB%B0%8F%20%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EB%AF%B8%EB%8B%88%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
 <br>
 <br>
