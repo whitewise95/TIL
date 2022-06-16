@@ -220,7 +220,14 @@ authenticated()
 
 # #인증 아키텍쳐  
 ### 📍 Spring Security Authentication Architecture  
-![인증 아키텍쳐](https://user-images.githubusercontent.com/81284265/171974679-bae65236-63d7-4f65-bc4f-77f61e566c7f.png)  
+
+`스프링 시큐리티를 이용`하게 되면 모든 요청은 `Session을 발급` 받는다. (시큐리티는 세션과 쿠키를 이용한 기술)    
+Session을 발급받으면 `클라이언트 쿠키에 JSESSIONID라는 키로 SessionId가 저장`된다.  
+아래 설명하게 될 `AuthenticationFiter는 해당 요청의 JSESSIONID를 확인`하여 매핑되는 인증 정보가    
+SecurityContext에 있는지 판단 후 `없으면 LOGIN페이지로 이동`시킨다.  
+![인증 아키텍쳐](https://user-images.githubusercontent.com/81284265/171974679-bae65236-63d7-4f65-bc4f-77f61e566c7f.png)   
+
+
 
 1. 사용자가 ***Form을 통해 로그인 정보*** 를 입력하고 인증 요청을 보낸다.  
 ```javascript
