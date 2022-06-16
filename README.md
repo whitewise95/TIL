@@ -79,6 +79,9 @@
 ## SpringSecurity(스프링 시큐리티)
 - [스프링 시큐리티란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)  
 - [JWT 와 Security 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)  
+- [스프링시큐리티 CORS설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20CORS%EC%84%A4%EC%A0%95.md)
+- [스프링시큐리티에서 세션차단 CORS 문제 해결하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%EC%97%90%EC%84%9C%20%EC%84%B8%EC%85%98%EC%B0%A8%EB%8B%A8%20%20CORS%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md)
+- [스프링시큐리티 세션 예제](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20%EC%84%B8%EC%85%98%20%EC%98%88%EC%A0%9C.md)
 
 
 
