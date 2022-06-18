@@ -5,6 +5,9 @@
 4) [Iterator vs for-each ](#iterator-vs-for-each)
 5) [참고](#참고)
 
+<br>
+<br>
+
 # #Iterator란?
 
 - `반복자` 라고 생각하면 쉽다. Collection 인터페이스를 구현하고 있는 클래스는 Iterator() 를 사용할 수 있습니다.  즉 `Iterator는` 자바의 컬렉션 프레임워크에서 `컬렉션에 저장되어 있는 요소들을 읽어오는 방법을 표준화`한 것이다.
