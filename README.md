@@ -65,6 +65,9 @@
 - [@Scheduled 스케쥴러 애노테이션](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%40Scheduled.md)
 - [Spring Boot 프로젝트 외부 경로 파일 접근(webConfig)](https://github.com/whitewise95/TIL/blob/main/Java/Spring/Spring%20Boot%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%99%B8%EB%B6%80%20%EA%B2%BD%EB%A1%9C%20%ED%8C%8C%EC%9D%BC%20%EC%A0%91%EA%B7%BC(webConfig).md)
 - [MVC패턴](https://github.com/whitewise95/TIL/blob/main/Java/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)  
+- [스프링부트 CORS 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%20CORS%20%EC%84%A4%EC%A0%95.md)
+- [controller에서 데이터 바인딩하는 방법](https://github.com/whitewise95/TIL/blob/main/Java/Spring/controller%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%94%EC%9D%B8%EB%94%A9%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- 
 
 <br>
 <br>
