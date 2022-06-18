@@ -116,9 +116,10 @@ class Scratch {
 [ConcurrentModificationException](https://github.com/whitewise95/TIL/tree/main/Java/error) 대한 내용은 링크를 통해 확인할 수 있다.
 
 
-
-
-
+# #참고
+- [Erinyees의 블로그](https://erinyees.tistory.com/21)  
+- [stackoverflow](https://stackoverflow.com/questions/22267919/iterator-vs-for)
+- [생활코딩](https://www.youtube.com/watch?v=DQN32cBaUEE)
 
 
 
