@@ -14,21 +14,21 @@
     - [컬렉션](#컬렉션)
     - [스트림(Stream)](#스트림stream)
     - [spring](#spring)
-2. [springsecurity](#springsecurity스프링-시큐리티)
-3. [DataBase](#database)
+    - [springsecurity](#springsecurity스프링-시큐리티)
+2. [DataBase](#database)
     - [JPA](#jpa)
-4. [aws](#aws)
+3. [aws](#aws)
     - [EC2](#ec2)
     - [RDS](#rds)
-5. [css](#css)
-6. [html](#html)
-7. [python](#파이썬)
-8. [security](#security)
-9. [algorithm](#알고리즘)
-10. [항해99](#항해99)
-11. [템플릿엔진](#템플릿엔진)
-12. [소스](#소스)
-13. [그 외](#그-외)
+4. [css](#css)
+5. [html](#html)
+6. [python](#파이썬)
+7. [security](#security)
+8. [algorithm](#알고리즘)
+9. [항해99](#항해99)
+10. [템플릿엔진](#템플릿엔진)
+11. [소스](#소스)
+12. [그 외](#그-외)
 
 <br>
 <br>
@@ -67,8 +67,12 @@
 - [MVC패턴](https://github.com/whitewise95/TIL/blob/main/Java/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)  
 - [스프링부트 CORS 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%20CORS%20%EC%84%A4%EC%A0%95.md)
 - [controller에서 데이터 바인딩하는 방법](https://github.com/whitewise95/TIL/blob/main/Java/Spring/controller%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%94%EC%9D%B8%EB%94%A9%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
-- 
-
+#### SpringSecurity(스프링 시큐리티)
+- [스프링 시큐리티란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)  
+- [JWT 와 Security 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)  
+- [스프링시큐리티 CORS설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20CORS%EC%84%A4%EC%A0%95.md)
+- [스프링시큐리티에서 세션차단 CORS 문제 해결하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%EC%97%90%EC%84%9C%20%EC%84%B8%EC%85%98%EC%B0%A8%EB%8B%A8%20%20CORS%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md)
+- [스프링시큐리티 세션 예제](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20%EC%84%B8%EC%85%98%20%EC%98%88%EC%A0%9C.md)
 <br>
 <br>
 <br>
@@ -80,19 +84,6 @@
 - [JPA란?](https://github.com/whitewise95/TIL/blob/main/DataBase/JPA/JPA%EB%8C%80%ED%95%B4%EC%84%9C.md)  
 - [JPA로 Pageable사용해서 페이징 처리하기](https://github.com/whitewise95/TIL/blob/main/DataBase/JPA/JPA%EB%A1%9C%20Pageable%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20.md)  
 
-
-<br>
-<br>
-<br>
-<br>  
-
-
-## SpringSecurity(스프링 시큐리티)
-- [스프링 시큐리티란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)  
-- [JWT 와 Security 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)  
-- [스프링시큐리티 CORS설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20CORS%EC%84%A4%EC%A0%95.md)
-- [스프링시큐리티에서 세션차단 CORS 문제 해결하기](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%EC%97%90%EC%84%9C%20%EC%84%B8%EC%85%98%EC%B0%A8%EB%8B%A8%20%20CORS%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md)
-- [스프링시큐리티 세션 예제](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%20%EC%84%B8%EC%85%98%20%EC%98%88%EC%A0%9C.md)
 
 
 
