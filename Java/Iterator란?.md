@@ -1,13 +1,22 @@
+# 목차 
+1) [Iterator란?](#iterator란)
+2) [기본 사용법](#기본-사용법)
+3) [remove() 에 대해서](#remove-에-대해서)
+4) [Iterator vs for-each ](#iterator-vs-for-each)
+5) [참고](#참고)
+
 # #Iterator란?
 
 - `반복자` 라고 생각하면 쉽다. Collection 인터페이스를 구현하고 있는 클래스는 Iterator() 를 사용할 수 있습니다.  즉 `Iterator는` 자바의 컬렉션 프레임워크에서 `컬렉션에 저장되어 있는 요소들을 읽어오는 방법을 표준화`한 것이다.
 
 <br>
 <br>
-<br>
 
 ![화면 캡처 2022-06-18 142650](https://user-images.githubusercontent.com/81284265/174424198-0c5fec9b-4f4f-4e78-97b9-a2fee5f856dc.png)![화면 캡처 2022-06-18 142816](https://user-images.githubusercontent.com/81284265/174424301-2787a892-ca40-4bb6-8c3d-5ff080789980.png)
 
+
+<br>
+<br>
 
 
 # #기본 사용법
@@ -43,6 +52,9 @@ class Scratch {
     }
 }
 ```
+
+<br>
+<br>
 
 # #remove() 에 대해서
 
@@ -115,6 +127,8 @@ class Scratch {
 `성능차이가 차이도 많이 안나는 것 같다.` 나는 차이점 2 때문에 Iterator를 사용하게 된 계기였다.  
 [ConcurrentModificationException](https://github.com/whitewise95/TIL/tree/main/Java/error) 대한 내용은 링크를 통해 확인할 수 있다.
 
+<br>
+<br>
 
 # #참고
 - [Erinyees의 블로그](https://erinyees.tistory.com/21)  
