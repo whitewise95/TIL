@@ -128,7 +128,7 @@ class Scratch {
 `가독성`은 개발자가 얼마나 그 `코드가 익숙하냐에 다름`이라 생각이들고  
 성능도 현재는 하드웨어가 너무 좋아 `소프트웨어에서의 속도는 중요도는 낮아졌다고 한다. 100% 무시할 순 없다.` 하지만  
 `성능차이가 차이도 많이 안나는 것 같다.` 나는 차이점 2 때문에 Iterator를 사용하게 된 계기였다.  
-[ConcurrentModificationException](https://github.com/whitewise95/TIL/tree/main/Java/error) 대한 내용은 링크를 통해 확인할 수 있다.
+[ConcurrentModificationException](https://github.com/whitewise95/TIL/blob/main/Java/error/ConcurrentModificationException.md) 대한 내용은 링크를 통해 확인할 수 있다.
 
 <br>
 <br>
