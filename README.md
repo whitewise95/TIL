@@ -13,7 +13,6 @@
     - [컬렉션](#컬렉션)
     - [스트림(Stream)](#스트림stream)
     - [spring](#spring)
-    - [그 외](#그-외)
 2. [springsecurity](#springsecurity스프링-시큐리티)
 3. [DataBase](#database)
     - [JPA](#jpa)
@@ -36,6 +35,14 @@
 <br> 
 
 ## JAVA
+#### java
+- [Iterator란?](https://github.com/whitewise95/TIL/blob/main/Java/Iterator%EB%9E%80%3F.md)
+- [자바 Arrays](https://github.com/whitewise95/TIL/blob/main/Java/Arrays.md)
+- [JSON 파싱하기](https://github.com/whitewise95/TIL/blob/main/Java/JSON%20%ED%8C%8C%EC%8B%B1.md)
+- [JVM,JRE,JDK](https://github.com/whitewise95/TIL/blob/main/Java/JVM.md)
+- [String, StringBuffer, StringBuilder 차이 및 장단점](https://github.com/whitewise95/TIL/blob/main/Java/String%2C%20StringBuffer%2C%20StringBuilder%20%EC%B0%A8%EC%9D%B4%20%EB%B0%8F%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)
+- [날짜와 시간 다루기(date,LocalDate)](https://github.com/whitewise95/TIL/blob/main/Java/%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20%EB%8B%A4%EB%A3%A8%EA%B8%B0.md)  
+- [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)  
 #### 스트림(Stream)
 - [스트림(Stream)의 개념](https://github.com/whitewise95/TIL/blob/main/Java/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%98%20%EA%B0%9C%EB%85%90.md)
 - [스트림 사용방법](https://github.com/whitewise95/TIL/blob/main/Java/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)/%EC%8A%A4%ED%8A%B8%EB%A6%BC%20%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95.md)
@@ -195,19 +202,6 @@
 - [JPA를 이용한 CRUD API 소스](https://github.com/whitewise95/TIL/tree/main/Java/example/JPA_CRUD_%20examples/Only%20API%20exists)
 - [Excel Upload and Download](https://github.com/whitewise95/TIL/tree/main/Java/example/Excel%20in%20java)
 - [이미지 업로드(서버의 폴더(o) SFTP(x))](https://github.com/whitewise95/TIL/blob/main/Java/example/%5Bjava%5D%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%85%EB%A1%9C%EB%93%9C%20(imageUpload).md)
-
-
-<br>
-<br>
-<br>
-<br>  
-
-#### 그 외 
-- [날짜와 시간 다루기(date,LocalDate)](https://github.com/whitewise95/TIL/blob/main/Java/%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%8B%9C%EA%B0%84%20%EB%8B%A4%EB%A3%A8%EA%B8%B0.md)  
-- [Array 메소드 ](https://github.com/whitewise95/TIL/blob/main/Java/Arrays.md)  
-- [제네릭스](https://github.com/whitewise95/TIL/blob/main/Java/%EC%A0%9C%EB%84%A4%EB%A6%AD%EC%8A%A4.md)  
-- [String, StringBuffer, StringBuilder 차이 및 장단점](https://github.com/whitewise95/TIL/blob/main/Java/String%2C%20StringBuffer%2C%20StringBuilder%20%EC%B0%A8%EC%9D%B4%20%EB%B0%8F%20%EC%9E%A5%EB%8B%A8%EC%A0%90.md)
-- [JSON 파싱](https://github.com/whitewise95/TIL/blob/main/Java/JSON%20%ED%8C%8C%EC%8B%B1.md)
 
 
 <br>
