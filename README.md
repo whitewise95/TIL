@@ -67,6 +67,7 @@
 - [MVC패턴](https://github.com/whitewise95/TIL/blob/main/Java/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)  
 - [스프링부트 CORS 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%20CORS%20%EC%84%A4%EC%A0%95.md)
 - [controller에서 데이터 바인딩하는 방법](https://github.com/whitewise95/TIL/blob/main/Java/Spring/controller%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%94%EC%9D%B8%EB%94%A9%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [인터셉터 Interceptor 대해서 및 예제포함](https://github.com/whitewise95/TIL/blob/main/Java/Spring/%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0%20Interceptor%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EB%B0%8F%20%EC%98%88%EC%A0%9C%ED%8F%AC%ED%95%A8.md)
 #### SpringSecurity(스프링 시큐리티)
 - [스프링 시큐리티란?](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/SpringSecurity(%EC%8A%A4%ED%94%84%EB%A7%81%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0).md)  
 - [JWT 와 Security 설정](https://github.com/whitewise95/TIL/blob/main/Java/Spring/SpringSecurity/JWT%20%EC%99%80%20Security%20%EC%84%A4%EC%A0%95.md)  
