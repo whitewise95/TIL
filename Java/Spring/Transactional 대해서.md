@@ -8,6 +8,8 @@
    - [설정4 : readOnly 읽기전용](#설정4--readonly-읽기전용)
    - [설정5 : noRollbackFor](#설정5--norollbackfor)
 
+4) [참고](#참고)
+
 
 <br>
 <br>
@@ -172,3 +174,11 @@ false , true로 설정하며 기본값은 false 입니다. true로 설정하면 
 아래 이미지와 같이 설정되면 설정된 Exception에 대해서는 롤백이 되지않고 커밋을 처리합니다.  
 ![화면 캡처 2022-06-22 174418](https://user-images.githubusercontent.com/81284265/174986322-0d2aa02c-b71c-431b-81c1-dc560f59d519.png)
 
+<br>
+<br>
+
+# #참고
+- [기록은 기억의 연장선](https://joont92.github.io/db/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-isolation-level/)
+- [[10분 테코톡] 🐤 샐리의 트랜잭션](https://www.youtube.com/watch?v=aX9c7z9l_u8)
+- [코린이의 개발노트](https://n1tjrgns.tistory.com/266)
+- [개발자로 홀로 서기](https://mommoo.tistory.com/62)
