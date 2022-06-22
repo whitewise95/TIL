@@ -33,8 +33,8 @@
 
 3. 핸들러 인터셉터를 등록하지 않았다면 곧바로 컨트롤러가 실행이 됩니다. 반대로 하나 이상의 인터셉터가 지정이 되어 있다면 지정된 순서에 따라서 인터셉터를 거쳐서 컨트롤러를 실행합니다.
 
- 
-![화면 캡처 2022-06-21 161532](https://user-images.githubusercontent.com/81284265/174739081-729a39f3-0642-43a6-874d-842ae5aa70a4.png)
+
+![Request (요청)](https://user-images.githubusercontent.com/81284265/174918427-71102f6a-e160-4b8f-baa5-3c99ba5f6c91.png)
 
 
 <br>
